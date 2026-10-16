@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop Hub</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <nav class="navbar navbar-expand-md">
+        <div class="container-fluid textStyle">
+          <a class="navbar-brand fw-bold" href="#">ShopHub</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#product">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#cartPage" id="cartLink">
+                  <i class="bi bi-cart"></i>
+                </a>
+              </li>
+            </ul>
+            <form
+              class="d-flex"
+              role="search"
+              data-bs-theme="light"
+              id="searchForm"
+            >
+              <input
+                id="searchInput"
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-info" type="submit">Search</button>
+              <button class="btn mx-2" type="button">
+                <i class="bi bi-brightness-high" id="them"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div class="intro" id="home">
+        <div class="colors">
+          <p>NEW ARRIVALS</p>
+          <h2>
+            Better Products<br />
+            Better Living
+          </h2>
+          <span>
+            Discover the latest tech and more-<br />
+            all in one place.
+          </span>
+          <br />
+          <button class="btn btn btn-primary" type="button">Shop now</button>
+        </div>
+        <div>
+          <img src="Light.jpg" alt="" id="image" />
+        </div>
+      </div>
+    </section>
+    <section
+      id="product"
+      class="d-flex flex-row flex-wrap justify-content-center gap-3"
+    ></section>
+    <section id="cartPage" class="d-none">
+      <h2 class="text-center">Your Shopping Cart</h2>
+      <div
+        id="cartItem"
+        class="d-flex flex-wrap justify-content-center m-5"
+      ></div>
+      <div class="container mt-4">
+        <h4 id="cartTotal">Total: $0.00</h4>
+        <button id="checkoutButton" type="button" class="btn btn-primary">
+          Checkout
+        </button>
+        <p id="checkoutMessage" class="mt-3"></p>
+      </div>
+    </section>
+    <footer>
+      <div>
+        <span>Made By Qutaiba Shakhatreh</span>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
